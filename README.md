@@ -1,0 +1,2 @@
+# djangofulltest
+django

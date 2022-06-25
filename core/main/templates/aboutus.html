@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Landing Page Website Design</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-hiking"></i> travel </a>
+       
+           
+        </div>
+
+        <nav class="navbar">
+           
+        <a href="{% url 'home' %}">Գլխավոր</a>
+        <a href="stays.html">Հյուրանոցներ</a>
+        <a href="flights.html">Թռիչքներ</a>
+        <a href="blog.html">Բլոգ</a>
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- navbar sections starts  -->
+{% endblock %}    
+
+   
+    <!-- home section stars  -->
+{% block content %}
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Մենք ճանապարհորդելը հասանելի ենք դարձնում բոլորի համար</h1>
+            <p> Մենք հավատում ենք, որ յուաքանչյուր ոք ունի ազատ ընտրության իրավունք ճանաչելու աշխարհը։
+                
+               Այդ իսկ պատճառով, մենք ավելի հարմար ենք դարձնում ճանապարհորդելը</p>
+
+           
+        </div>
+
+
+        <div class="image">
+            <img src="images/a1.jpg" alt="illustration-hero">
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features sectin starts  -->
+
+    <section class="features" id="features">
+      
+
+        <div class="row">
+            <!-- 1 Tab  -->
+            <div class="image">
+                <img src="images/a2.jpg" alt="illustration-features-tab-1">
+            </div>
+
+
+            <div class="content">
+                <h1>Մենք ամրագրում ենք, դուք ճամփորդում</h1>
+                <p>  Այս կայքի միջոցով ամրագրելը ավելի արագ է և մատչելի։
+                    Ընտրեք վայրը,որտեղ ցանկանում եք գնալ ,ամրագրեք հյուրանոցը և թռիչքը, իսկ մենք կապահովենք կատարյալ
+                    հանգիստը
+                </p>
+  
+            </div>
+
+            <!-- 1 Tab  -->
+
+            <!-- 2 Tab  -->
+            <div class="content">
+                <h1>Մեզ համար կարևոր են ձեր նախասիրությունները</h1>
+                <p>Մենք ստեղծել ենք մի հարթակ, որը կօգնի ձեզ խնայել ժամանակ և գումար
+                    ճամփորդություն պլանավորելիս
+                </p>
+           
+            </div>
+
+            <div class="image">
+                <img src="images/a3.jpg" alt="illustration-features-tab-2">
+            </div>
+
+            
+
+        </div>
+    </section>
+
+{% endblock %} 
+
+    <!-- footer section ends -->
+{% block js %}
+    <script src="{% static 'js/about.js' %}"></script>
+{% endblock %}
+
+    
+</body>
+
+</html>
